@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>popup</title>
+    <title>popup과 modal의 차이</title>
+    <link rel="stylesheet" href="/source/css/reset.css" data-discript="reset">
+    <link rel="stylesheet" href="/source/css/common.css">
+    <script src="/source/js/jquery.3.6.1.js" data-discript="jquery"></script>
 </head>
 <body>
 <div class="wrap">
+    <div class="header">
+        <header>
+            <a href="#none"><span class="hidden">history back</span></a>
+            <h1 class="h1">modal과 popup</h1>
+            <button><span class="hidden">menu</span></button>
+        </header>
+    </div>
     <div class="container">
         <div class="section">
-            <h1 class="h1">modal과 popup의 차이</h1>
+            
+            <h2 class="h2">modal과 popup 사용</h1>
             <div class="cont_wrap">
-                <h2 class="h2">modal</h2>
+                <h3 class="h3">modal</h3>
                 <p>modal은 시작(진입 컨퍼넌트)하여 끝(OK, Save, Done...)을 낼 수 있으며, 모달에서 다시 바닥(main)로 이동</p>
-                <p>특직 : Dim 처리</p>
+                <p>특징 : Dim 처리</p>
+                <h3 class="h3">popup</h3>
+                <p>non-modal이라 호칭하는 것이 더 적합하며 부모 서비스와 함꼐 사용할 수 있음</p>
+                <p>바닥(main)에 정보를 그룹핑 하여 보여주는 기능</p>
+                <p>특징 : Dim 처리 없음</p>
+            </div>
+            <h2 class="h2">modal과 popup의 종류</h1>
+            <div class="cont_wrap">
+                <h3 class="h3">modal</h2>
                 <ul>
                     <li>Dialog
                         <ul>
@@ -38,9 +57,7 @@
                 </ul>
             </div>
             <div class="cont_wrap">
-                <h2 class="h2">non-modal</h2>
-                <p>popup이라 호칭해야 하며 부모 서비스와 함꼐 사용할 수 있음</p>
-                <p>특징 : Dim 처리 없음</p>
+                <h3 class="h3">non-modal</h2>
                 <ul>
                     <li>Snacbar</li>
                     <li>Banner</li>

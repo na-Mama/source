@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* 
+    common // 공통
+ */
+:root {
+    /* color */
+    --color_b:#666;
+    --color_g:#666;
+    --color_y:#fbbe28;
+    /* font sise */
+    --font_b:2.2rem;
+    --font_m:1.8rem;
+    --font_s:1.6rem;
+    --font_n:1.2rem;
+}
+.h1, .h2, .h3, .h4{color: var(--color_b);line-height: var(--font_b);}
+.h1{font-size: var(--font_m);line-height: var(--font_m);}
+.h2{font-size: var(--font_s);line-height: var(--font-s);}
+
+
+/* 
+    header 
+*/
+.header{padding:1rem 1rem;}
+.header header{display: inline-flex;}
+.header a.header_historyBack, .header h1.h1{}
+.header h1.h1{}
+.hidden .menu{}
